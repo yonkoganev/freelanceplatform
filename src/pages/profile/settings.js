@@ -1,4 +1,4 @@
-import Info from "@/components/Profile/info";
+import Info from "@/components/Profile/Info";
 
 const Settings = () => {
     return(
