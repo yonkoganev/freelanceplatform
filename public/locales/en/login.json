@@ -1,0 +1,11 @@
+{
+    "login": "Log in",
+    "signup": "Sign up",
+    "buttons": [
+        { "title": "Hire freelancers" },
+        { "title": "Find work" },
+        { "title": "Why uLance" },
+        { "title": "How it works" },
+        { "title": "Pricing" }
+    ]
+}

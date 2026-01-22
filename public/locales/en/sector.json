@@ -1,0 +1,41 @@
+{
+  "headline": "Find talents or jobs across <highlight>every</highlight> field.",
+  "categories": [
+    {
+      "title": "Development & IT",
+      "description": "Build and optimize software systems."
+    },
+    {
+      "title": "Design & Creative",
+      "description": "Create visuals, brands, and experiences."
+    },
+    {
+      "title": "AI Services",
+      "description": "Automate workflows with AI solutions."
+    },
+    {
+      "title": "Sales & Marketing",
+      "description": "Grow reach through smart strategy."
+    },
+    {
+      "title": "Writing & Translation",
+      "description": "Write, edit, and translate content."
+    },
+    {
+      "title": "Admin & Support",
+      "description": "Manage daily operations efficiently."
+    },
+    {
+      "title": "Finance & Accounting",
+      "description": "Handle budgets and financial planning."
+    },
+    {
+      "title": "Legal",
+      "description": "Protect and guide your business."
+    },
+    {
+      "title": "HR & Training",
+      "description": "Develop teams and manage talent."
+    }
+  ]
+}

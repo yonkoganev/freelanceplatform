@@ -1,0 +1,48 @@
+{
+  "offers": [
+    {
+      "description": "Python & C++ developer skilled in data analysis and automation.",
+      "skills": ["Python Developer", "C++", "Teamwork", "Data Analyst"]
+    },
+    {
+      "description": "Content creator focused on increasing brand awareness and followers.",
+      "skills": ["SEO", "Instagram Ads", "Google Ads", "Flexible"]
+    },
+    {
+      "description": "Finance analyst experienced in forecasting, budgeting, and investment strategies.",
+      "skills": ["Excel", "Financial Modeling", "Budgeting", "Risk Analysis"]
+    },
+    {
+      "description": "Full-stack web developer with a focus on scalable web applications and databases.",
+      "skills": ["React", "Node.js", "MongoDB", "REST APIs"]
+    },
+    {
+      "description": "Marketing strategist helping businesses grow through creative campaigns.",
+      "skills": ["Digital Marketing", "Copywriting", "Campaign Strategy"]
+    },
+    {
+      "description": "Corporate lawyer specializing in contracts, compliance, and business law.",
+      "skills": ["Legal Research", "Contract Drafting", "Negotiation"]
+    },
+    {
+      "description": "Sales manager with proven record in driving revenue and client retention.",
+      "skills": ["CRM", "Negotiation", "Lead Generation", "Customer Success"]
+    }
+  ],
+  "profiles": {
+    "profile1": {
+      "name": "Jane Doe",
+      "headline": "Marketing strategist helping businesses grow through creative campaigns.",
+      "skills": ["Analytics", "Copywriting", "Ads", "Campaign Strategy", "Marketing"],
+      "rating": "Rating (4.5/5.0):",
+      "button": "Contact"
+    },
+    "profile2": {
+      "name": "John Doe",
+      "headline": "Full-stack web developer with a focus on scalable web applications and databases.",
+      "skills": ["React", "Node.js", "MongoDB", "REST APIs"],
+      "rating": "Rating (4.0/5.0):",
+      "button": "Contact"
+    }
+  }
+}
