@@ -1,4 +1,4 @@
-import SearchBar from "./SearcBbar";
+import SearchBar from "./SearchBar";
 import { useState } from "react";
 import CitySelect from "./CitySelect";
 import HourlyRateSlider from "./HourlyRateSlider";
