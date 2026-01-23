@@ -9,8 +9,10 @@ import CardMembershipOutlinedIcon from "@mui/icons-material/CardMembershipOutlin
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 import MarkEmailUnreadOutlinedIcon from '@mui/icons-material/MarkEmailUnreadOutlined';
 import { Avatar, Box, Divider, IconButton, Menu, MenuItem, Switch, Typography, Grid, lighten } from "@mui/material";
+import { useRouter } from "next/navigation";
 
 const ProfileMenu = () => {
+  const router = useRouter();
   const [anchorEl, setAnchorEl] = useState(null);
   const [online, setOnline] = useState(true);
   const [theme, setTheme] = useState("light");
@@ -128,7 +130,7 @@ const ProfileMenu = () => {
           <HelpOutlineRoundedIcon fontSize="small" sx={{ mr: 1 }} />
           Help & Support
         </MenuItem>
-        <MenuItem>
+        <MenuItem onClick={() => router.push("/profile/myinfo")}>
           <SettingsOutlinedIcon fontSize="small" sx={{ mr: 1 }} />
           Account settings
         </MenuItem>

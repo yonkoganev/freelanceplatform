@@ -32,7 +32,7 @@ export default function ReviewsCarousel() {
     pauseOnHover: false,
     cssEase: "ease-in-out",
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
+      { breakpoint: 1200, settings: { slidesToShow: 2 } },
       { breakpoint: 600, settings: { slidesToShow: 1 } },
     ],
   };

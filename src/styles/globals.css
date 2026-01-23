@@ -63,20 +63,20 @@ a {
 }
 
 @keyframes cursorMove {
-  0% { top: 60px; right: 9px; }
-  10% { top: 120px; right: 9px; }
-  17% { top: 150px; right: 200px }
-  25% { top: 150px; right: 200px }
-  32% { top: 19px; right: 95px }
-  39% { top: 19px; right: 95px }
-  45% { top: 80px; right: 240px }
-  52% { top: 80px; right: 240px }
-  63% { top: 19px; right: 95px }
-  70% { top: 19px; right: 95px }
-  79% { top: 120px; right: 9px; }
-  82% { top: 120px; right: 9px; }
-  92% { top: 60px; right: 9px }
-  100% { top: 60px; right: 9px }
+  0% { top: 20%; right: 2% }
+  10% { top: 40%; right: 2% }
+  17% { top: 50%; right: 45% }
+  25% { top: 50%; right: 45% }
+  32% { top: 4%; right: 20.75% }
+  39% { top: 4%; right: 20.75% }
+  45% { top: 27.5%; right: 40% }
+  52% { top: 27.5%; right: 40% }
+  63% { top: 4%; right: 20.75% }
+  70% { top: 4%; right: 20.75% }
+  79% { top: 40%; right: 2% }
+  82% { top: 40%; right: 2% }
+  92% { top: 20%; right: 2% }
+  100% { top: 20%; right: 2% }
 }
 
 @keyframes scrollingBox {
@@ -88,11 +88,11 @@ a {
 }
 
 @keyframes scrollBar {
-  0% { top: 0px; }
-  10% { top: 60px }
-  82% { top: 60px }
-  92% { top: 0px }
-  100% { top: 0px }
+  0% { top: 0%; }
+  10% { top: 25% }
+  82% { top: 25% }
+  92% { top: 0% }
+  100% { top: 0% }
 }
 
 @keyframes popupProfile {

@@ -75,7 +75,7 @@ const HeroVector = () => {
             <PiCursorFill style={{ position: 'absolute', top: 60, right: 9, color: grey[600], zIndex: 999, animation: 'cursorMove 12s ease-in-out infinite' }} />
             <Grid container width="100%" display="flex" alignItems="center" p={2} borderRadius={1} border={2} borderColor={grey[300]} mt={2} position="relative" overflow="hidden" height={240}>
                 {/* Scrollbar */}
-                <Box position="absolute" width={10} top={0} right={0} height="100%" borderLeft={2} borderColor={grey[300]}>
+                <Box position="absolute" width="2.5%" top={0} right={0} height="100%" borderLeft={2} borderColor={grey[300]}>
                     <Box width="100%" height="10%" bgcolor={grey[400]} top={0} position="absolute" sx={{ animation: 'scrollBar 12s ease-in-out infinite' }} />
                 </Box>
                 <Grid container width="100%" sx={{ animation: 'scrollingBox 12s ease-in-out infinite' }}>
@@ -119,10 +119,10 @@ const HeroVector = () => {
                     px: 2,
                     py: 4,
                     border: 2,
-                    width: 260,
+                    width: '57%',
                     top: '50%',
                     left: '50%',
-                    height: 290,
+                    height: '100%',
                     zIndex: 998,
                     borderRadius: 1,
                     position: 'absolute',
@@ -132,11 +132,11 @@ const HeroVector = () => {
                     animation: 'popupProfile 12s ease-in-out infinite'
                 }}
             >
-                <Box sx={{ height: 8, width: 8, borderRadius: '50%', bgcolor: '#fa5d56', position: 'absolute', top: 6, right: 5 }} />
-                <Box sx={{ height: 8, width: 8, borderRadius: '50%', bgcolor: '#fbb92e', position: 'absolute', top: 6, right: 18 }} />
-                <Box sx={{ height: 8, width: 8, borderRadius: '50%', bgcolor: '#29c43f', position: 'absolute', top: 6, right: 31 }} />
+                <Box sx={{ width: '3%', aspectRatio: '1/1', borderRadius: '50%', bgcolor: '#fa5d56', position: 'absolute', top: '2%', right: '2%' }} />
+                <Box sx={{ width: '3%', aspectRatio: '1/1', borderRadius: '50%', bgcolor: '#fbb92e', position: 'absolute', top: '2%', right: '6.5%' }} />
+                <Box sx={{ width: '3%', aspectRatio: '1/1', borderRadius: '50%', bgcolor: '#29c43f', position: 'absolute', top: '2%', right: '11%' }} />
                 <Grid container width="100%" direction="row" display="flex" justifyContent="space-between" alignItems="center">
-                    <Avatar style={{ height: 65, width: 65 }} />
+                    <Avatar sx={{ height: 65, width: 65 }} />
                     <Grid container direction="column" width="66%">
                         <Box
                             sx={{
@@ -221,10 +221,10 @@ const HeroVector = () => {
                     px: 2,
                     py: 4,
                     border: 2,
-                    width: 260,
+                    width: '57%',
                     top: '50%',
                     left: '50%',
-                    height: 290,
+                    height: '100%',
                     zIndex: 998,
                     borderRadius: 1,
                     position: 'absolute',
@@ -234,9 +234,9 @@ const HeroVector = () => {
                     animation: 'popupProfile2 12s ease-in-out infinite'
                 }}
             >
-                <Box sx={{ height: 8, width: 8, borderRadius: '50%', bgcolor: '#fa5d56', position: 'absolute', top: 6, right: 5 }} />
-                <Box sx={{ height: 8, width: 8, borderRadius: '50%', bgcolor: '#fbb92e', position: 'absolute', top: 6, right: 18 }} />
-                <Box sx={{ height: 8, width: 8, borderRadius: '50%', bgcolor: '#29c43f', position: 'absolute', top: 6, right: 31 }} />
+                <Box sx={{ width: '3%', aspectRatio: '1/1', borderRadius: '50%', bgcolor: '#fa5d56', position: 'absolute', top: '2%', right: '2%' }} />
+                <Box sx={{ width: '3%', aspectRatio: '1/1', borderRadius: '50%', bgcolor: '#fbb92e', position: 'absolute', top: '2%', right: '6.5%' }} />
+                <Box sx={{ width: '3%', aspectRatio: '1/1', borderRadius: '50%', bgcolor: '#29c43f', position: 'absolute', top: '2%', right: '11%' }} />
                 <Grid container width="100%" direction="row" display="flex" justifyContent="space-between" alignItems="center">
                     <Avatar style={{ height: 65, width: 65 }} />
                     <Grid container direction="column" width="66%">

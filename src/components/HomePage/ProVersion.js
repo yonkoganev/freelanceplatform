@@ -4,9 +4,9 @@ import { grey } from "@mui/material/colors";
 
 const ProVersion = () => {
     return(
-        <Grid container width="100%" display="flex" justifyContent="center" my={8}>
+        <Grid container width="100%" display="flex" justifyContent="center" my={8} px={2}>
             <Grid container
-                size={{ lg: 8, md: 8, sm: 12, xs: 12 }}
+                size={{ lg: 8, md: 10, sm: 12, xs: 12 }}
                 sx={{
                     px: 8,
                     py: 10,
@@ -44,7 +44,7 @@ const ProVersion = () => {
                         </Button>
                     </Grid>
                 </Grid>
-                <Grid size={{ lg: 6.2, md: 5, sm: 12, xs: 12 }}>
+                <Grid size={{ lg: 6.2, md: 5, sm: 12, xs: 12 }} display={{ xs: 'none', sm: 'none', md: 'flex' }}>
                     <video
                         src="/assets/workingvideo.mp4"
                         autoPlay

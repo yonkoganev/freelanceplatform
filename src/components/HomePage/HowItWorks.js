@@ -18,21 +18,21 @@ const HowItWorks = () => {
     const [hovered, setHovered] = useState();
     return(
         <Grid container width="100%" display="flex" justifyContent="center" mb={8} mt={15}>
-            <Grid container size={{ lg: 8, md: 8, sm: 12, xs: 12 }}>
+            <Grid container size={{ lg: 8, md: 10, sm: 12, xs: 12 }} px={2}>
                 <Typography fontSize={40} color={grey[800]} fontWeight={600}>
                     Simple. <span style={{ color: grey[800], background: `linear-gradient(to right, ${gradientBox}, transparent)`, paddingLeft: 5 }}>Fast</span>. Reliable.
                 </Typography>
-                <Grid container justifyContent="space-between" gap={2} mt={6}> 
+                <Grid container justifyContent="space-between" gap={5} mt={6}> 
                     {boxes.map((box, id) => (
                     <Box
                         onMouseEnter={() => setHovered(id)}
                         onMouseLeave={() => setHovered(null)}
                         key={id}
-                        width="23%"
                         flexGrow={1}
                         display="flex"
                         alignItems="center"
                         flexDirection="column"
+                        sx={{ width: { lg: '20%', sm: '40%', md: '40%', xs: '40%' } }}
                     >   
                         <Box
                             sx={{
@@ -59,6 +59,7 @@ const HowItWorks = () => {
                     </Box>
                     ))}
                 </Grid>
+                {/* CTA */}
                 <Grid container width="100%" justifyContent="center" mt={6}>
                     <Button
                         sx={{

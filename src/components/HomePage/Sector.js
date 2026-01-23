@@ -43,7 +43,7 @@ const Sector = () => {
 
   return (
     <Grid container width="100%" display="flex" justifyContent="center" my={8}>
-      <Grid size={{ lg: 8, md: 8, sm: 12, xs: 12 }} display="flex" px={2} flexDirection="column">
+      <Grid size={{ lg: 8, md: 10, sm: 12, xs: 12 }} display="flex" px={2} flexDirection="column">
         <Typography fontSize={40} color={grey[800]} fontWeight={550}>
           <Trans
             i18nKey="headline"

@@ -6,7 +6,7 @@ import { darkBrand } from "@/theme/colors";
 
 const settingsbuttons = [
     { title: 'My Info', active: true, link: '/profile/myinfo' },
-    { title: 'Team & Members', active: false, link: '/profile/teamandmembers' },
+    //{ title: 'Team & Members', active: false, link: '/profile/teamandmembers' },
     { title: 'Membership', active: false, link: '/profile/membership' },
     { title: 'Password & Security', active: false, link: '/profile/security' }
 ];

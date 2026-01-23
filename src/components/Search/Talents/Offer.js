@@ -5,7 +5,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { Avatar, Box, Button, Chip, CircularProgress, Grid, IconButton, Typography } from "@mui/material";
 
 const Offer = () => {
-    const text = "I am a sex offender but also an experienced Software Developer. Currently trying to get close to Denitsa and sexually torture her. So far, the mission is not completed but I am a hard-working man so I wouldn`t give up regardless of the circumstances.";
+    const text = "I am an experienced Software Developer who is capable of building nice looking websites but also manage the backend part of the websites.";
     return(
         <Box
             sx={{
@@ -23,7 +23,7 @@ const Offer = () => {
                     <Avatar sx={{ width: 65, height: 65 }} />
                     <Grid container direction="column" ml={1}>
                         <Typography color={grey[900]} fontSize={16}>Yonko G.</Typography>
-                        <Typography color={grey[900]} fontSize={20} fontWeight={600} mt={-0.7}>Sex Offender | Python Developer</Typography>
+                        <Typography color={grey[900]} fontSize={20} fontWeight={600} mt={-0.7}>Front-end Developer | Next.js, React, JS</Typography>
                         <Typography color={grey[600]} fontSize={14} mt={-0.7}>Bulgaria</Typography>
                     </Grid>
                 </Grid>

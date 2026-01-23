@@ -15,9 +15,9 @@ const ChooseFromTheBest = () => {
     const [hovered, setHovered] = useState();
     return(
         <Grid container width="100%" display="flex" justifyContent="center" mb={15} mt={10}>
-            <Grid size={{ lg: 8, md: 8, sm: 12, xs: 12 }} px={2} display="flex" flexDirection="row" justifyContent="space-between" alignItems="center">
+            <Grid size={{ lg: 8, md: 10, sm: 12, xs: 12 }} px={2} display="flex" flexDirection={{ xs: 'column', sm: 'column', md: 'row', lg: 'row' }} justifyContent="space-between" alignItems="center">
                 {/* Left Side */}
-                <Grid sx={{ width: { lg: '45%', md: '40%', sm: '100%', xs: '100%' } }}>
+                <Grid sx={{ width: { lg: '45%', md: '45%', sm: '100%', xs: '100%' } }}>
                     <Typography color={grey[900]} fontSize={40} fontWeight={600} lineHeight={1.1}>
                         Collaborate with <span style={{ color: grey[900], background: `linear-gradient(to right, ${gradientBox}, transparent)`, paddingLeft: 5 }}>Confidence</span>
                     </Typography>
@@ -57,9 +57,8 @@ const ChooseFromTheBest = () => {
                         ))}
                     </Grid>
                 </Grid>
-
                 {/* Right Side */}
-                <Grid sx={{ width: { lg: '35%', md: '30%', sm: '100%', xs: '100%' } }}>
+                <Grid sx={{ width: { lg: 350, md: 350, sm: '80%', xs: '100%' }, mt: { xs: 5, sm: 5, md: 0, lg: 0 } }}>
                     <Vector />
                 </Grid>
             </Grid>

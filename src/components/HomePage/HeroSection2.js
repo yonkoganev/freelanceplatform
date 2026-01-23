@@ -16,9 +16,9 @@ const HeroSection2 = () => {
     const { t } = useTranslation("hero");
     return(
         <Grid container width="100%" display="flex" justifyContent="center" px={2} my={20}>
-            <Grid size={{ lg: 8, md: 8, sm: 12, xs: 12 }} display="flex" justifyContent="space-between">
-                <Grid size={{ lg: 5, md: 5, sm: 12, xs: 12 }} direction="column">
-                    <Typography suppressHydrationWarning color={grey[900]} fontSize={60} fontWeight={900} letterSpacing="-3px" lineHeight={1}>
+            <Grid size={{ lg: 8, md: 10, sm: 12, xs: 12 }} display="flex" justifyContent="space-between" sx={{ flexDirection: { lg: 'row', md: 'row', sm: 'column', xs: 'column' } }}>
+                <Grid size={{ lg: 5.5, md: 7, sm: 12, xs: 12 }} direction="column">
+                    <Typography suppressHydrationWarning color={grey[900]} fontWeight={900} letterSpacing="-3px" lineHeight={1} sx={{ fontSize: { lg: 60, md: 50, sm: 40, xs: 40 }, width: { lg: '100%', md: '100%', sm: '70%' } }}>
                         <Trans i18nKey="headline" ns="hero" components={{ highlight: ( <span style={highlightStyle} /> ) }} />
                     </Typography>
                     <Typography color={grey[600]} fontSize={18} mt={2}>
@@ -45,7 +45,7 @@ const HeroSection2 = () => {
                         {t("shortdescription")}
                     </Typography>
                 </Grid>
-                <Grid size={{ lg: 5, md: 5, sm: 12, xs: 12 }} direction="column">
+                <Grid size={{ lg: 5, md: 5, sm: 12, xs: 12 }} direction="column" sx={{ mt: { lg: 0, md: 0, sm: 8, xs: 8 } }}>
                     <HeroVector />
                 </Grid>
             </Grid>

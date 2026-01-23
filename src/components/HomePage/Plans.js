@@ -8,15 +8,15 @@ const Plans = () => {
     const [selected, setSelected] = useState()
     return(
         <Grid container width="100%" display="flex" justifyContent="center" mb={10} position="relative" mt={20}>
-            <Typography color={grey[900]} fontSize={36} fontWeight={500} letterSpacing="-1px" zIndex={999}>Choose a plan accordingly</Typography>
-            <Grid size={{ lg: 9.2 }} display="flex" justifyContent="center" gap={2} mt={5} zIndex={999}>
+            <Typography color={grey[900]} fontSize={36} fontWeight={500} letterSpacing="-1px" zIndex={998}>Choose a plan accordingly</Typography>
+            <Grid size={{ lg: 9.2, xs: 12, sm: 12, md: 11 }} px={2} display="flex" justifyContent="center" gap={2} mt={5} zIndex={998} flexDirection={{ lg: 'row', md: 'row', sm: 'column', xs: 'column' }}>
                 <Box
                     onMouseEnter={() => setSelected(0)}
                     onMouseLeave={() => setSelected(null)}
                     sx={{
                         p: 4,
                         border: 1,
-                        width: '35%',
+                        width: { lg: '35%', md: '48%', sm: '100%', xs: '100%'},
                         borderRadius: 5,
                         overflow: 'hidden',
                         background: '#fff',
@@ -24,7 +24,7 @@ const Plans = () => {
                         borderColor: grey[300],
                         transition: 'transform 0.2s ease-in-out',
                         boxShadow: selected === 0 ? `0px 10px 20px ${grey[300]}` : 0,
-                        ':hover': { borderColor: darkBrand, transform: 'scale(1.05)' }
+                        ':hover': { borderColor: darkBrand, transform: { lg: 'scale(1.05)', md: 'scale(1.05)', sm: 'scale(1.02)', xs: 'scale(1.02)' } }
                     }}
                 >
                     <Typography color={grey[900]} fontSize={18} fontWeight={600}>
@@ -79,15 +79,15 @@ const Plans = () => {
                     sx={{
                         p: 4,
                         border: 1,
-                        width: '35%',
+                        width: { lg: '35%', md: '48%', sm: '100%', xs: '100%'},
                         borderRadius: 5,
                         overflow: 'hidden',
                         background: '#fff',
                         position: 'relative',
-                        borderColor: grey[300],
+                        borderColor: darkBrand,
                         transition: 'transform 0.2s ease-in-out',
                         boxShadow: selected === 1 ? `0px 10px 20px ${grey[300]}` : 0,
-                        ':hover': { borderColor: darkBrand, transform: 'scale(1.05)' }
+                        ':hover': { borderColor: darkBrand, transform: { lg: 'scale(1.05)', md: 'scale(1.05)', sm: 'scale(1.02)', xs: 'scale(1.02)' } }
                     }}
                 >
                     <Typography color={grey[900]} fontSize={18} fontWeight={600}>
@@ -129,8 +129,8 @@ const Plans = () => {
                             borderRadius: 2,
                             textTransform: 'none',
                             borderColor: darkBrand,
-                            color: selected === 1 ? grey[50] : darkBrand,
-                            background: selected === 1 ? darkBrand : 'transparent'
+                            color: grey[50],
+                            background: darkBrand
                         }}
                     >
                         Start with this plan
@@ -195,7 +195,7 @@ const Plans = () => {
                     sx={{
                         width: '50%',
                         height: '100%',
-                        zIndex: 999,
+                        zIndex: 998,
                         position: 'absolute',
                         background: 'linear-gradient(to bottom right, #fff 10%, transparent, #fff 80%)'
                     }}
@@ -204,7 +204,7 @@ const Plans = () => {
                     sx={{
                         width: '100%',
                         height: '100%',
-                        zIndex: 999,
+                        zIndex: 998,
                         position: 'absolute',
                         background: 'linear-gradient(to bottom left, #fff 20%, transparent, #fff 80%)'
                     }}
@@ -213,7 +213,7 @@ const Plans = () => {
                     sx={{
                         left: '40%',
                         width: 300,
-                        zIndex: 999,
+                        zIndex: 998,
                         bottom: -30,
                         height: 200,
                         opacity: 0.3,

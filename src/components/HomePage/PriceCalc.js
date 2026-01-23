@@ -8,7 +8,7 @@ import ScalingText from "./ScalingText";
 const PriceCalc = () => {
     return(
         <Grid container width="100%" display="flex" justifyContent="center" my={8} px={2}>
-            <Grid size={{ lg: 8, md: 8, sm: 12, xs: 12 }}
+            <Grid size={{ lg: 8, md: 10, sm: 12, xs: 12 }}
                 sx={{
                     p: 1,
                     height: 400,
@@ -23,7 +23,7 @@ const PriceCalc = () => {
                     sx={{
                         px: 4,
                         border: 1,
-                        zIndex: 999,
+                        zIndex: 998,
                         height: '100%',
                         borderRadius: 5,
                         display: 'flex',
@@ -50,8 +50,8 @@ const PriceCalc = () => {
                     </Typography>
                     <PriceInputBar />
                 </Grid>
-                <Grid size={{ lg: 6 }} height="100%" display="flex" justifyContent="center" alignItems="center" position="relative">
-                    <Box sx={{ position: "absolute", top: "60%", transform: "translateY(-60%)", zIndex: 999 }}>
+                <Grid size={{ lg: 6 }} height="100%" display={{ lg: 'flex', md: 'none', sm: 'none', xs: 'none' }} justifyContent="center" alignItems="center" position="relative">
+                    <Box sx={{ position: "absolute", top: "60%", transform: "translateY(-60%)", zIndex: 998 }}>
                         <ScalingText />
                     </Box>
                     <PriceAnim />

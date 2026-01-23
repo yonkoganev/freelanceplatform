@@ -10,6 +10,7 @@ import {
 import { grey, green } from "@mui/material/colors";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
+import { darkBrand } from "@/theme/colors";
 
 export default function FAQSection() {
   const [expanded, setExpanded] = useState(0);
@@ -48,7 +49,7 @@ export default function FAQSection() {
 
   return (
     <Grid container width="100%" display="flex" justifyContent="center" position="relative">
-    <Grid size={{ lg: 8, md: 8, sm: 12, xs: 12 }}
+    <Grid size={{ lg: 8, md: 10, sm: 12, xs: 12 }}
       sx={{
         px: 2,
         mt: 10,
@@ -61,6 +62,7 @@ export default function FAQSection() {
       }}
     >
       <Typography
+        zIndex={999}
         variant="h4"
         fontWeight={600}
         color={grey[900]}
@@ -76,7 +78,7 @@ export default function FAQSection() {
           sx={{
             px: 2,
             py: 1,
-            zIndex: 999,
+            zIndex: 998,
             borderRadius: 5,
             backgroundColor: grey[50],
             overflow: "hidden", // keeps corners clean
@@ -98,9 +100,9 @@ export default function FAQSection() {
             <AccordionSummary
               expandIcon={
                 expanded === index ? (
-                  <RemoveIcon sx={{ color: green[400] }} />
+                  <RemoveIcon sx={{ color: darkBrand }} />
                 ) : (
-                  <AddIcon sx={{ color: green[400] }} />
+                  <AddIcon sx={{ color: darkBrand }} />
                 )
               }
               sx={{

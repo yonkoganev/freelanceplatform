@@ -50,11 +50,11 @@ const socials = [
 
 const Footer = () => {
     return(
-        <Grid container width="100%" justifyContent="center" display="flex" mb={5} zIndex={999}>
+        <Grid container width="100%" justifyContent="center" display="flex" mb={5} zIndex={999} sx={{ px: { xs: 0, sm: 2, md: 2, lg: 2 } }}>
             <Grid
-                size={{ lg: 11, md: 7.2, sm: 10, xs: 12 }}
+                size={{ lg: 11, md: 10, sm: 10, xs: 12 }}
                 sx={{
-                    px: 12,
+                    px: { lg: 12, md: 12, sm: 8, xs: 8 },
                     py: 8,
                     gap: 2,
                     zIndex: 999,
@@ -66,7 +66,8 @@ const Footer = () => {
                 }}
             >
                 <Grid container width="100%">
-                    <Grid size={{ lg: 2.8, md: 2.8, sm: 11, xs: 11 }}>
+                    {/* For Clients */}
+                    <Grid size={{ lg: 2.8, md: 2.8, sm: 6, xs: 7 }}>
                         <Typography color={grey[400]} fontSize={14} mb={2}>For Clients</Typography>
                         {clientsmenu.map((item, id) => (
                             <Typography
@@ -82,7 +83,8 @@ const Footer = () => {
                             </Typography>
                         ))}
                     </Grid>
-                    <Grid size={{ lg: 2.8, md: 2.8, sm: 11, xs: 11 }}>
+                    {/* For Talent */}
+                    <Grid size={{ lg: 2.8, md: 2.8, sm: 5, xs: 4 }}>
                         <Typography color={grey[400]} fontSize={14} mb={2}>For Talent</Typography>
                         {talentmenu.map((item, id) => (
                             <Typography
@@ -98,7 +100,8 @@ const Footer = () => {
                             </Typography>
                         ))}
                     </Grid>
-                    <Grid size={{ lg: 2.8, md: 2.8, sm: 11, xs: 11 }} display="flex" flexDirection="column">
+                    {/* Resources */}
+                    <Grid size={{ lg: 2.8, md: 2.8, sm: 6, xs: 7 }} sx={{ mt: { lg: 0, md: 0, sm: 6, xs: 6 } }} display="flex" flexDirection="column">
                         <Typography color={grey[400]} fontSize={14} mb={2}>Resources</Typography>
                         {resourcesmenu.map((item, id) => (
                             <Typography
@@ -114,7 +117,8 @@ const Footer = () => {
                             </Typography>
                         ))}
                     </Grid>
-                    <Grid size={{ lg: 2.8, md: 2.8, sm: 11, xs: 11 }}>
+                    {/* Company */}
+                    <Grid size={{ lg: 2.8, md: 2.8, sm: 5, xs: 4 }} sx={{ mt: { lg: 0, md: 0, sm: 6, xs: 6 } }}>
                         <Typography color={grey[400]} fontSize={14} mb={2}>Company</Typography>
                         {companymenu.map((item, id) => (
                             <Typography
@@ -131,6 +135,7 @@ const Footer = () => {
                         ))}
                     </Grid>
                 </Grid>
+                {/* Socials */}
                 <Grid container width="100%" mt={2} display="flex" alignItems="center" justifyContent="space-between" borderBottom={1} pb={2} borderColor={grey[800]}>
                     <Grid size={{ lg: 5 }} display="flex" alignItems="center">
                         <Typography fontSize={14} color={grey[400]} mr={2}>Follow us</Typography>
@@ -157,9 +162,10 @@ const Footer = () => {
                         </IconButton>
                     </Grid>
                 </Grid>
+                {/* Bottom */}
                 <Grid container width="100%" display="flex" alignItems="center" gap={2}>
                     <Typography color={grey[400]} fontSize={14}>@2025 uLance® Global LLC</Typography>
-                    <Typography color={grey[50]} sx={{ ':hover': { textDecoration: 'underline' }, cursor: 'pointer', fontSize: 14, ml: 4 }}>
+                    <Typography color={grey[50]} sx={{ ':hover': { textDecoration: 'underline' }, cursor: 'pointer', fontSize: 14, ml: { lg: 4, md: 4, sm: 4, xs: 0 } }}>
                         Terms of Service
                     </Typography>
                     <Typography color={grey[50]} sx={{ ':hover': { textDecoration: 'underline' }, cursor: 'pointer', fontSize: 14 }}>
