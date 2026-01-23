@@ -42,7 +42,7 @@ const PriceCalc = () => {
                         `
                     }}
                 >
-                    <Typography color={grey[50]} fontWeight={600} fontSize={50} lineHeight={1.1}>
+                    <Typography color={grey[50]} fontWeight={600} fontSize={38} lineHeight={1.1}>
                         Get insights into freelancer pricing
                     </Typography>
                     <Typography color={grey[50]} fontSize={16} mt={4}>

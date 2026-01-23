@@ -18,7 +18,7 @@ const ChooseFromTheBest = () => {
             <Grid size={{ lg: 8, md: 10, sm: 12, xs: 12 }} px={2} display="flex" flexDirection={{ xs: 'column', sm: 'column', md: 'row', lg: 'row' }} justifyContent="space-between" alignItems="center">
                 {/* Left Side */}
                 <Grid sx={{ width: { lg: '45%', md: '45%', sm: '100%', xs: '100%' } }}>
-                    <Typography color={grey[900]} fontSize={40} fontWeight={600} lineHeight={1.1}>
+                    <Typography color={grey[900]} fontSize={38} fontWeight={550} lineHeight={1.1}>
                         Collaborate with <span style={{ color: grey[900], background: `linear-gradient(to right, ${gradientBox}, transparent)`, paddingLeft: 5 }}>Confidence</span>
                     </Typography>
                     <Typography color={grey[700]} fontSize={16} mt={2}>

@@ -19,7 +19,7 @@ const HowItWorks = () => {
     return(
         <Grid container width="100%" display="flex" justifyContent="center" mb={8} mt={15}>
             <Grid container size={{ lg: 8, md: 10, sm: 12, xs: 12 }} px={2}>
-                <Typography fontSize={40} color={grey[800]} fontWeight={600}>
+                <Typography fontSize={38} color={grey[800]} fontWeight={550} lineHeight={1.1}>
                     Simple. <span style={{ color: grey[800], background: `linear-gradient(to right, ${gradientBox}, transparent)`, paddingLeft: 5 }}>Fast</span>. Reliable.
                 </Typography>
                 <Grid container justifyContent="space-between" gap={5} mt={6}> 

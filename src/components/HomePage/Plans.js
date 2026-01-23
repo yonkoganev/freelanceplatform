@@ -2,13 +2,15 @@ import { useState } from "react";
 import { green, grey } from "@mui/material/colors";
 import CheckIcon from '@mui/icons-material/Check';
 import { Box, Button, darken, Grid, Typography } from "@mui/material";
-import { darkBrand, lightBrand } from "@/theme/colors";
+import { darkBrand, gradientBox, lightBrand } from "@/theme/colors";
 
 const Plans = () => {
     const [selected, setSelected] = useState()
     return(
-        <Grid container width="100%" display="flex" justifyContent="center" mb={10} position="relative" mt={20}>
-            <Typography color={grey[900]} fontSize={36} fontWeight={500} letterSpacing="-1px" zIndex={998}>Choose a plan accordingly</Typography>
+        <Grid container width="100%" display="flex" justifyContent="center" mb={10} position="relative" mt={20} px={2}>
+            <Typography color={grey[900]} fontSize={38} lineHeight={1.1} fontWeight={550} letterSpacing="-1px" zIndex={998}>
+                Choose a <span style={{ color: grey[800], background: `linear-gradient(to right, ${gradientBox}, transparent)`, paddingLeft: 5 }}>plan</span> accordingly
+            </Typography>
             <Grid size={{ lg: 9.2, xs: 12, sm: 12, md: 11 }} px={2} display="flex" justifyContent="center" gap={2} mt={5} zIndex={998} flexDirection={{ lg: 'row', md: 'row', sm: 'column', xs: 'column' }}>
                 <Box
                     onMouseEnter={() => setSelected(0)}
@@ -164,6 +166,7 @@ const Plans = () => {
                         textTransform: 'none',
                         background: darkBrand,
                         transition: 'transform 0.2s ease-in-out',
+                        width: { lg: 'auto', md: 'auto', sm: 'auto', xs: '100%' },
                         ':hover': { background: darken(darkBrand, 0.1), boxShadow: `0px 0px 20px ${lightBrand}`, transform: 'scale(1.05)' }
                     }}
                 >

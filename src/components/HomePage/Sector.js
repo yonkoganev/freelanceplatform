@@ -44,7 +44,7 @@ const Sector = () => {
   return (
     <Grid container width="100%" display="flex" justifyContent="center" my={8}>
       <Grid size={{ lg: 8, md: 10, sm: 12, xs: 12 }} display="flex" px={2} flexDirection="column">
-        <Typography fontSize={40} color={grey[800]} fontWeight={550}>
+        <Typography fontSize={38} color={grey[800]} fontWeight={550} lineHeight={1.1}>
           <Trans
             i18nKey="headline"
             ns="sector"

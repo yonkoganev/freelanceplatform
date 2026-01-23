@@ -8,8 +8,7 @@ const ProVersion = () => {
             <Grid container
                 size={{ lg: 8, md: 10, sm: 12, xs: 12 }}
                 sx={{
-                    px: 8,
-                    py: 10,
+                    p: { lg: 8, md: 8, sm: 7, xs: 4 },
                     borderRadius: 5,
                     justifyContent: 'space-between',
                     background: `linear-gradient(to bottom, ${lightBrand}, ${gradientBox})`
@@ -20,7 +19,7 @@ const ProVersion = () => {
                         <span style={{ fontWeight: 900 }}>ulance</span> pro.
                     </Typography>
                     <Grid container width="100%" mt={5}>
-                        <Typography color={grey[900]} fontSize={45} letterSpacing="-1px" fontWeight={100} lineHeight={1.1}>
+                        <Typography color={grey[900]} fontSize={{ lg: 45, md: 45, sm: 40, xs: 35 }} letterSpacing="-1px" fontWeight={100} lineHeight={1.1}>
                             High-quality work, or your <span style={{ fontWeight: 900, color: grey[800] }}>money back</span>
                         </Typography>
                         <Typography color={grey[900]} fontSize={16} mt={2}>
@@ -37,7 +36,8 @@ const ProVersion = () => {
                                 borderRadius: 2,
                                 color: lightBrand,
                                 textTransform: 'none',
-                                background: grey[900]
+                                background: grey[900],
+                                width: { lg: 'auto', md: 'auto', sm: 'auto', xs: '100%' }
                             }}
                         >
                             Try now

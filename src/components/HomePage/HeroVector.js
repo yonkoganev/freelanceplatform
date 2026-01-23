@@ -119,6 +119,7 @@ const HeroVector = () => {
                     px: 2,
                     py: 4,
                     border: 2,
+                    width: 300,
                     top: '50%',
                     left: '50%',
                     height: '100%',
@@ -128,7 +129,6 @@ const HeroVector = () => {
                     background: '#fff',
                     borderColor: grey[300],
                     transform: 'translate(-50%, -50%)',
-                    width: { lg: '57%', md: '57%', sm: '57%', xs: '70%' },
                     animation: 'popupProfile 12s ease-in-out infinite'
                 }}
             >
@@ -136,8 +136,8 @@ const HeroVector = () => {
                 <Box sx={{ width: '3%', aspectRatio: '1/1', borderRadius: '50%', bgcolor: '#fbb92e', position: 'absolute', top: '2%', right: '6.5%' }} />
                 <Box sx={{ width: '3%', aspectRatio: '1/1', borderRadius: '50%', bgcolor: '#29c43f', position: 'absolute', top: '2%', right: '11%' }} />
                 <Grid container width="100%" direction="row" display="flex" justifyContent="space-between" alignItems="center">
-                    <Avatar sx={{ height: 65, width: 65 }} />
-                    <Grid container direction="column" width="66%">
+                    <Avatar sx={{ height: 58, width: 58 }} />
+                    <Grid container direction="column" flexGrow={1} flexBasis="68%" ml={1}>
                         <Box
                             sx={{
                                 py: 0.1,
@@ -150,17 +150,17 @@ const HeroVector = () => {
                                 Jane Doe
                             </Typography>
                         </Box>
-                        <Grid container width="100%" display="flex" justifyContent="space-between">
+                        <Grid container width="100%" display="flex" justifyContent="space-between" gap={0.5} mt={0.5} flexWrap="wrap">
                             {profile.map((skill, id) => (
                                 <Box
                                     key={id}
                                     sx={{
-                                        px: 1,
+                                        px: 0.4,
                                         py: 0.4,
-                                        mt: 0.5,
+                                        display: 'flex',
+                                        flex: '1 0 30%',
                                         background: lightBrand,
-                                        flexGrow: id === 4 ? 1 : 0,
-                                        ml: id === 1 || id === 2 || id === 4 ? 0.5 : 0,
+                                        justifyContent: 'center',
                                     }}
                                 >
                                     <Typography color={darkBrand} sx={{ fontSize: 10 }}>{skill.skill}</Typography>
@@ -220,16 +220,16 @@ const HeroVector = () => {
                     px: 2,
                     py: 4,
                     border: 2,
+                    width: 300,
                     top: '50%',
                     left: '50%',
-                    height: '100%',
                     zIndex: 998,
+                    height: '100%',
                     borderRadius: 1,
                     position: 'absolute',
                     background: '#fff',
                     borderColor: grey[300],
                     transform: 'translate(-50%, -50%)',
-                    width: { lg: '57%', md: '57%', sm: '57%', xs: '73%' },
                     animation: 'popupProfile2 12s ease-in-out infinite'
                 }}
             >
@@ -237,8 +237,8 @@ const HeroVector = () => {
                 <Box sx={{ width: '3%', aspectRatio: '1/1', borderRadius: '50%', bgcolor: '#fbb92e', position: 'absolute', top: '2%', right: '6.5%' }} />
                 <Box sx={{ width: '3%', aspectRatio: '1/1', borderRadius: '50%', bgcolor: '#29c43f', position: 'absolute', top: '2%', right: '11%' }} />
                 <Grid container width="100%" direction="row" display="flex" justifyContent="space-between" alignItems="center">
-                    <Avatar style={{ height: 65, width: 65 }} />
-                    <Grid container direction="column" width="66%">
+                    <Avatar style={{ height: 58, width: 58 }} />
+                    <Grid container direction="column" flexGrow={1} flexBasis="68%" ml={1}>
                         <Box
                             sx={{
                                 px: 3,
@@ -252,17 +252,15 @@ const HeroVector = () => {
                                 John Doe
                             </Typography>
                         </Box>
-                        <Grid container width="100%" display="flex" justifyContent="space-between">
+                        <Grid container width="100%" display="flex" justifyContent="space-between" gap={0.5} mt={0.5}>
                             {profile2.map((skill, id) => (
                                 <Box
                                     key={id}
                                     sx={{
                                         px: 1,
                                         py: 0.4,
-                                        mt: 0.5,
                                         background: lightBrand,
-                                        flexGrow: id === 4 ? 1 : 0,
-                                        ml: id === 1 || id === 2 || id === 4 ? 0.5 : 0,
+                                        flex: '1 1 32%'
                                     }}
                                 >
                                     <Typography color={darkBrand} fontSize={10}>{skill.skill}</Typography>

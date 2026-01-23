@@ -7,7 +7,7 @@ const Reviews = () => {
     return(
         <Grid container width="100%" display="flex" justifyContent="center">
             <Grid size={{ lg: 8, md: 10, sm: 12, xs: 12 }} px={2}>
-                <Typography color={grey[800]} fontSize={40} fontWeight={600}>
+                <Typography color={grey[800]} fontSize={38} fontWeight={550} lineHeight={1.1}>
                     Voices from Our <span style={{ color: grey[900], background: `linear-gradient(to right, ${gradientBox}, transparent)`, paddingLeft: 5 }}>Network</span>
                 </Typography>
                 <ReviewsCarousel />
