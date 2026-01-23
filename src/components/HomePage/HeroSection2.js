@@ -1,4 +1,4 @@
-import { Button, darken, Grid, Typography } from "@mui/material";
+import { Box, Button, darken, Grid, Typography } from "@mui/material";
 import { grey } from "@mui/material/colors";
 import HeroVector from "./HeroVector";
 import { darkBrand, gradientBox } from "@/theme/colors";
@@ -46,9 +46,9 @@ const HeroSection2 = () => {
                         {t("shortdescription")}
                     </Typography>
                 </Grid>
-                <Grid size={{ lg: 5, md: 5, sm: 12, xs: 12 }} direction="column" sx={{ mt: { lg: 0, md: 0, sm: 8, xs: 8 } }}>
+                <Box width={{ lg: "41%", md: "41%", sm: "100%", xs: "100%" }} display="flex" justifyContent="left" sx={{ mt: { lg: 0, md: 0, sm: 8, xs: 8 } }}>
                     <HeroVector />
-                </Grid>
+                </Box>
             </Grid>
         </Grid>
     );
