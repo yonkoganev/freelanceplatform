@@ -78,6 +78,7 @@ const Header = () => {
                         sx={{
                             fontSize: 14,
                             color: grey[900],
+                            fontWeight: 600,
                             textTransform: "none",
                             background: "transparent",
                             ":hover": { background: "transparent" }
