@@ -54,8 +54,8 @@ const Footer = () => {
             <Grid
                 size={{ lg: 11, md: 10, sm: 10, xs: 12 }}
                 sx={{
-                    px: { lg: 12, md: 12, sm: 8, xs: 8 },
-                    py: 8,
+                    px: { lg: 12, md: 12, sm: 8, xs: 5 },
+                    py: { lg: 8, md: 8, sm: 8, xs: 5 },
                     gap: 2,
                     zIndex: 999,
                     display: 'flex',
@@ -84,7 +84,7 @@ const Footer = () => {
                         ))}
                     </Grid>
                     {/* For Talent */}
-                    <Grid size={{ lg: 2.8, md: 2.8, sm: 5, xs: 4 }}>
+                    <Grid size={{ lg: 2.8, md: 2.8, sm: 5, xs: 5 }}>
                         <Typography color={grey[400]} fontSize={14} mb={2}>For Talent</Typography>
                         {talentmenu.map((item, id) => (
                             <Typography
@@ -118,7 +118,7 @@ const Footer = () => {
                         ))}
                     </Grid>
                     {/* Company */}
-                    <Grid size={{ lg: 2.8, md: 2.8, sm: 5, xs: 4 }} sx={{ mt: { lg: 0, md: 0, sm: 6, xs: 6 } }}>
+                    <Grid size={{ lg: 2.8, md: 2.8, sm: 5, xs: 5 }} sx={{ mt: { lg: 0, md: 0, sm: 6, xs: 6 } }}>
                         <Typography color={grey[400]} fontSize={14} mb={2}>Company</Typography>
                         {companymenu.map((item, id) => (
                             <Typography

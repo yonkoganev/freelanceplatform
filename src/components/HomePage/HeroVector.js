@@ -63,7 +63,7 @@ const profile2 = [
 const HeroVector = () => {
     const { t } = useTranslation('heroVector');
     return(
-        <Box width={450} p={2} sx={{ border: 2, borderColor: grey[300], borderRadius: 2, position: 'relative' }}>
+        <Box width={450} p={2} sx={{ border: 2, borderColor: grey[300], borderRadius: 2, position: 'relative', transform: { lg: 'scale(1.0)', md: 'scale(1.0)', sm: 'scale(1.0)', xs: 'scale(0.8)' } }}>
             {/* Header */}
             <Grid container width="100%" display="flex" alignItems="center" gap={{ lg: 2, md: 2, sm: 2, xs: 0 }} justifyContent="space-between">
                 <Typography color={grey[900]} fontSize={12} fontWeight={600}>uLance</Typography>
