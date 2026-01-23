@@ -119,7 +119,6 @@ const HeroVector = () => {
                     px: 2,
                     py: 4,
                     border: 2,
-                    width: '57%',
                     top: '50%',
                     left: '50%',
                     height: '100%',
@@ -129,6 +128,7 @@ const HeroVector = () => {
                     background: '#fff',
                     borderColor: grey[300],
                     transform: 'translate(-50%, -50%)',
+                    width: { lg: '57%', md: '57%', sm: '57%', xs: '70%' },
                     animation: 'popupProfile 12s ease-in-out infinite'
                 }}
             >
@@ -136,11 +136,10 @@ const HeroVector = () => {
                 <Box sx={{ width: '3%', aspectRatio: '1/1', borderRadius: '50%', bgcolor: '#fbb92e', position: 'absolute', top: '2%', right: '6.5%' }} />
                 <Box sx={{ width: '3%', aspectRatio: '1/1', borderRadius: '50%', bgcolor: '#29c43f', position: 'absolute', top: '2%', right: '11%' }} />
                 <Grid container width="100%" direction="row" display="flex" justifyContent="space-between" alignItems="center">
-                    <Avatar sx={{ height: 65, width: 65 }} />
+                    <Avatar sx={{ height: { lg: 65, md: 65, sm: 65, xs: 50 }, width: { lg: 65, md: 65, sm: 65, xs: 50 } }} />
                     <Grid container direction="column" width="66%">
                         <Box
                             sx={{
-                                px: 3,
                                 py: 0.1,
                                 display: 'flex',
                                 background: grey[200],
@@ -156,7 +155,7 @@ const HeroVector = () => {
                                 <Box
                                     key={id}
                                     sx={{
-                                        px: 1,
+                                        px: { lg: 1, md: 1, sm: 1, xs: 0.5 },
                                         py: 0.4,
                                         mt: 0.5,
                                         background: lightBrand,
@@ -164,13 +163,13 @@ const HeroVector = () => {
                                         ml: id === 1 || id === 2 || id === 4 ? 0.5 : 0,
                                     }}
                                 >
-                                    <Typography color={darkBrand} fontSize={8}>{skill.skill}</Typography>
+                                    <Typography color={darkBrand} sx={{ fontSize: { lg: 8, md: 8, sm: 8, xs: 6 } }}>{skill.skill}</Typography>
                                 </Box>
                             ))}
                         </Grid>
                     </Grid>
                     <Grid container width="100%" mt={2} px={1} direction="column">
-                        <Typography color={grey[900]} fontSize={11}>
+                        <Typography color={grey[900]} sx={{ fontSize: { lg: 11, md: 11, sm: 11, xs: 7 } }}>
                             Marketing strategist helping businesses grow through creative campaigns.
                         </Typography>
                         {Array.from({ length: 4 }).map((_, id) => (
@@ -186,7 +185,7 @@ const HeroVector = () => {
                             />
                         ))}
                         <Grid container width="100%" display="flex" alignItems="center" my={1}>
-                            <Typography color={grey[900]} fontSize={11} mr={1} mt={0.2}>
+                            <Typography color={grey[900]} sx={{ fontSize: { lg: 11, md: 11, sm: 11, xs: 7 } }} mr={1} mt={0.2}>
                                 Rating (4.5/5.0):
                             </Typography>
                             {Array.from({ length: 5 }).map((_, id) => (
@@ -221,7 +220,6 @@ const HeroVector = () => {
                     px: 2,
                     py: 4,
                     border: 2,
-                    width: '57%',
                     top: '50%',
                     left: '50%',
                     height: '100%',
@@ -231,6 +229,7 @@ const HeroVector = () => {
                     background: '#fff',
                     borderColor: grey[300],
                     transform: 'translate(-50%, -50%)',
+                    width: { lg: '57%', md: '57%', sm: '57%', xs: '70%' },
                     animation: 'popupProfile2 12s ease-in-out infinite'
                 }}
             >
