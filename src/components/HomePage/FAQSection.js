@@ -61,14 +61,7 @@ export default function FAQSection() {
         gap: 2, // spacing between cards
       }}
     >
-      <Typography
-        zIndex={999}
-        variant="h4"
-        fontWeight={600}
-        color={grey[900]}
-        textAlign="center"
-        mb={4}
-      >
+      <Typography zIndex={998} fontSize={38} fontWeight={550} color={grey[900]} textAlign="center" mb={4}>
         Frequently Asked Questions
       </Typography>
 
