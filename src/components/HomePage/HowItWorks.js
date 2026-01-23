@@ -72,6 +72,7 @@ const HowItWorks = () => {
                             textTransform: 'none',
                             background: darkBrand,
                             transition: 'transform 0.2s ease-in-out',
+                            width: { lg: 'auto', md: 'auto', sm: 'auto', xs: '100%' },
                             ':hover': { boxShadow: `0px 0px 20px ${darkBrand}`, transform: 'scale(1.05)' }
                         }}
                     >

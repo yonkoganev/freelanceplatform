@@ -65,10 +65,10 @@ const HeroVector = () => {
     return(
         <Box width="100%" p={2} sx={{ border: 2, borderColor: grey[300], borderRadius: 2, position: 'relative' }}>
             {/* Header */}
-            <Grid container width="100%" display="flex" alignItems="center" gap={2} justifyContent="space-between">
+            <Grid container width="100%" display="flex" alignItems="center" gap={{ lg: 2, md: 2, sm: 2, xs: 0 }} justifyContent="space-between">
                 <Typography color={grey[900]} fontSize={12} fontWeight={600}>uLance</Typography>
                 {Array.from({ length: 5 }).map((_, id) => (
-                    <Box key={id} bgcolor={grey[300]} height={15} width="10%" borderRadius={2} />
+                    <Box key={id} bgcolor={grey[300]} height={15} width="8%" borderRadius={2} />
                 ))}
                 <Box bgcolor={darkBrand} height={20} width="10%" borderRadius={2} />
             </Grid>

@@ -36,6 +36,7 @@ const HeroSection2 = () => {
                             borderRadius: 50,
                             textTransform: 'none',
                             background: darkBrand,
+                            width: { lg: 'auto', md: 'auto', sm: 'auto', xs: '100%' },
                             ':hover': { background: darken(darkBrand, 0.1), boxShadow: `0px 0px 20px ${grey[400]}` }
                         }}
                     >
